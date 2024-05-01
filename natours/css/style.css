@@ -53,7 +53,6 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #777;
   padding: 3rem;
@@ -80,6 +79,22 @@ body {
   font-weight: 700;
   letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .heading-tertiary {
@@ -221,6 +236,27 @@ body {
   transform: scale(0.95);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
 .row {
   width: 114rem;
   margin: 0 auto;
@@ -237,25 +273,25 @@ body {
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 6rem;
 }
 .row .col-1-of-2 {
-  width: calc((100% - 2rem) / 2);
+  width: calc((100% - 6rem) / 2);
 }
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 2rem) / 3);
+  width: calc((100% - 2 * 6rem) / 3);
 }
 .row .col-2-of-3 {
-  width: calc((100% - 2 * 2rem) / 3 * 2 + 2rem);
+  width: calc((100% - 2 * 6rem) / 3 * 2 + 6rem);
 }
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 2rem) / 4);
+  width: calc((100% - 3 * 6rem) / 4);
 }
 .row .col-2-of-4 {
-  width: calc(2 * (100% - 3 * 2rem) / 4 + 2rem);
+  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
 }
 .row .col-3-of-4 {
-  width: calc(3 * (100% - 3 * 2rem) / 4 + 2 * 2rem);
+  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
 }
 
 .header {
@@ -289,20 +325,15 @@ body {
   margin-top: -15vh;
 }
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 0.2rem;
-  transition: all 0.2s;
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
 }
-.heading-secondary:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 /*# sourceMappingURL=style.css.map */
