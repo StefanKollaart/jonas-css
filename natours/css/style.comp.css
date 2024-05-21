@@ -85,11 +85,6 @@ body {
   }
 }
 
-::selection {
-  background-color: #55c57a;
-  color: #fff;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -631,7 +626,7 @@ body {
 }
 @media (max-width: 600px) {
   .story {
-    width: 100%;
+    width: 50%;
   }
 }
 .story__shape {
@@ -1011,4 +1006,4 @@ body {
   padding: 6rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.comp.css.map */
